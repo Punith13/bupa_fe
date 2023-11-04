@@ -46,9 +46,9 @@ const resolvers: any = {
 
           if (filteredBooks && filteredBooks.length) {
             return [...acc, { ...curr, books: filteredBooks }];
-          } else {
-            return [];
           }
+
+          return acc;
         }, []);
 
         return response;
