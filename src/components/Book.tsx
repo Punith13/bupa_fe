@@ -8,11 +8,11 @@ interface BookProps {
 
 const Book = ({ hardCover, bookTitles, gender }: BookProps) => {
   return (
-    <div className="rounded">
-      <div className="bg-bupa_blue text-white text-3xl w-3/4 p-4">
+    <div className="w-full sm:w-[49%]">
+      <div className="bg-bupa_blue text-white text-2xl sm:text-3xl p-2 ">
         {`${hardCover ? "Hardcover" : ""} Books with ${gender} Owners`}
       </div>
-      <div className="book-titles p-4 w-3/4 border-2">
+      <div className="book-titles p-4 border-2 min-h-[20vh]">
         {bookTitles.map((title, idx) => (
           <p key={idx}>{title}</p>
         ))}
