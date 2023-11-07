@@ -1,8 +1,8 @@
-import { ApolloServer } from "@apollo/server";
-import { startStandaloneServer } from "@apollo/server/standalone";
-import type { ListenOptions } from "net";
+import { ApolloServer } from '@apollo/server';
+import { startStandaloneServer } from '@apollo/server/standalone';
+import type { ListenOptions } from 'net';
 
-import data from "./data.json" assert { type: "json" };
+import data from './data.json' assert { type: 'json' };
 
 interface Book {
   name: string;
@@ -14,6 +14,11 @@ interface Person {
   gender: string;
   age: number;
   books: Book[] | null;
+}
+
+interface ApolloServerType {
+  server: ApolloServer;
+  url: string;
 }
 
 // Schema definition
@@ -38,11 +43,11 @@ export const typeDefs = `
 // Resolver map
 export const resolvers = {
   Query: {
-    people: (_, { hardcoverOnly }: { hardcoverOnly: boolean }) => {
+    people: (_, { hardcoverOnly }: { hardcoverOnly: boolean }): Person[] => {
       if (hardcoverOnly) {
         const response = data.reduce((acc: Person[], curr: Person) => {
           const filteredBooks = curr.books?.filter(
-            (book) => book.type === "Hardcover",
+            (book) => book.type === 'Hardcover',
           );
 
           if (filteredBooks && filteredBooks.length) {
@@ -62,7 +67,7 @@ export const resolvers = {
 // This function will create a new server Apollo Server instance
 export const createApolloServer = async (
   listenOptions: ListenOptions = { port: 4000 },
-) => {
+): Promise<ApolloServerType> => {
   const server = new ApolloServer({
     typeDefs,
     resolvers,
@@ -79,7 +84,7 @@ export const createApolloServer = async (
 // For simplicity we create our server in this file,
 // but in a real app you'd export `createApolloServer` into
 // another file and call it elsewhere.
-if (process.env.NODE_ENV !== "test") {
+if (process.env.NODE_ENV !== 'test') {
   const { url } = await createApolloServer();
   console.log(`🚀 Query endpoint ready at ${url}`);
 }
