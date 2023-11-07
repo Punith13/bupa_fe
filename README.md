@@ -87,20 +87,20 @@ The husky pre commit hook is also configured which checks the linting and runs t
 
 Desktop - All books 
 
-![All Desktop](images/all_desktop.png)
+![All Desktop books](images/all_desktop.png)
 
 Desktop - Hardcover only books 
 
-![Hardcover Desktop](images/hardcover_desktop.png)
+![Hardcover Desktop books](images/hardcover_desktop.png)
 
 
 Mobile - All books 
 
-![All Mobile](images/all_mobile.png)
+![All Mobile books ](images/all_mobile.png)
 
 Desktop - Hardcover only books 
 
-![Hardcover Mobile](images/hardcover_mobile.png)
+![Hardcover Mobile books](images/hardcover_mobile.png)
 
 
 ## License
