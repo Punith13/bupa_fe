@@ -14,18 +14,19 @@ Before you can run the Vite app and the server, please make sure you have the fo
 
 2. Install project dependencies by running the following command:
 
-```
-cd client
-npm install
-```
+`cd client`
 
-3. Start the Vite application by running the following command:
+3. Install the server's dependencies by running the following command:
+
+`npm install`
+
+4. Start the Vite application by running the following command:
 
 `npm run dev`
 
 This command will start the development server for the Vite application. You can access the app in your web browser at `http://localhost:5173`.
 
-4. To build the Vite application for production, you can use the following command:
+5. To build the Vite application for production, you can use the following command:
 
 `npm run build`
 
@@ -77,6 +78,10 @@ npm run test
 ```
 
 This command will execute the tests for the server and provide feedback on the test results.
+
+## Husky pre-commit hook 
+
+The husky pre commit hook is also configured which checks the linting and runs the unit test before commiting the code. 
 
 ## License
 
