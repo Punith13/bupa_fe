@@ -25,5 +25,11 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^17.0.45",
     "supertest": "^6.2.2"
+  },
+  "lint-staged": {
+    "*.{js,css,ts,tsx,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }

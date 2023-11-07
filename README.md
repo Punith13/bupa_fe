@@ -1,6 +1,6 @@
-# Project README
+# BUPA FE Code challenge
 
-This README file provides instructions on how to run a Vite application located in the root project directory and a server located in the `server` folder. The server includes npm run start and test commands.
+This README file provides instructions on how to run a Vite FE application located in the root project directory and a server located in the `server` folder. The server includes npm run start and test commands.
 
 ## Prerequisites
 
