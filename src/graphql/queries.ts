@@ -1,4 +1,6 @@
-export const getPersonBooks = /* GraphQL */ `
+import { gql } from "@apollo/client";
+
+export const getPersonBooks = gql`
   query GetPersonBooks($hardcoverOnly: Boolean) {
     people(hardcoverOnly: $hardcoverOnly) {
       name

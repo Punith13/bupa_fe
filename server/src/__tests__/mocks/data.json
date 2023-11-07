@@ -1,0 +1,20 @@
+[
+  {
+    "name": "John Doe",
+    "gender": "Male",
+    "age": 30,
+    "books": [
+      { "name": "Book 1", "type": "Hardcover" },
+      { "name": "Book 2", "type": "Paperback" }
+    ]
+  },
+  {
+    "name": "Jane Doe",
+    "gender": "Female",
+    "age": 30,
+    "books": [
+      { "name": "Book 3", "type": "Hardcover" },
+      { "name": "Book 4", "type": "Paperback" }
+    ]
+  }
+]
