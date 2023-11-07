@@ -24,4 +24,6 @@ module.exports = {
   moduleNameMapper: {
     "data.json": "<rootDir>/src/__tests__/mocks/data.json",
   },
+  coverageProvider: "v8",
+  collectCoverage: true,
 };
