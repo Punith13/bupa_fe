@@ -5,7 +5,9 @@ import "./App.css";
 import Main from "./components/Main";
 
 const client = new ApolloClient({
-  uri: import.meta.env.VITE_GRAPQHL_URL,
+  uri: import.meta.env.PROD
+    ? import.meta.env.VITE_GRAPQHL_URL_PROD
+    : import.meta.env.VITE_GRAPQHL_URL_DEV,
   cache: new InMemoryCache(),
 });
 
