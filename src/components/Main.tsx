@@ -27,6 +27,8 @@ const Main = () => {
 
   return loading ? (
     <Loader />
+  ) : error ? (
+    <p data-testid="error">Unable to load the data, please try again!</p>
   ) : (
     <>
       <Header />
