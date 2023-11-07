@@ -83,6 +83,26 @@ This command will execute the tests for the server and provide feedback on the t
 
 The husky pre commit hook is also configured which checks the linting and runs the unit test before commiting the code. 
 
+## Output 
+
+Desktop - All books 
+
+![All Desktop](images/all_desktop.png)
+
+Desktop - Hardcover only books 
+
+![Hardcover Desktop](images/hardcover_desktop.png)
+
+
+Mobile - All books 
+
+![All Mobile](images/all_mobile.png)
+
+Desktop - Hardcover only books 
+
+![Hardcover Mobile](images/hardcover_mobile.png)
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
