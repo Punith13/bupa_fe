@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky install && cd server && husky install"
   },
   "dependencies": {
     "@apollo/client": "^3.8.7",
