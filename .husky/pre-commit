@@ -6,4 +6,5 @@ npx lint-staged
 npm test
 
 cd ../server
+npx lint-staged
 npm test
