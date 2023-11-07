@@ -12,11 +12,11 @@ Before you can run the Vite app and the server, please make sure you have the fo
 
 1. Open a terminal and navigate to the project's root directory.
 
-2. Install project dependencies by running the following command:
+2. Change into `client` directory by running the following command:
 
 `cd client`
 
-3. Install the server's dependencies by running the following command:
+3. Install the  dependencies by running the following command:
 
 `npm install`
 
