@@ -1,6 +1,6 @@
 # BUPA FE Code challenge
 
-This README file provides instructions on how to run a Vite FE application located in the root project directory and a server located in the `server` folder. The server includes npm run start and test commands.
+This README file provides instructions on how to run a Vite FE application located in the `client` directory and a server located in the `server` folder. The server includes npm run start and test commands.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ Before you can run the Vite app and the server, please make sure you have the fo
 
 `cd client`
 
-3. Install the  dependencies by running the following command:
+3. Install the dependencies by running the following command:
 
 `npm install`
 
@@ -48,10 +48,10 @@ This will create an optimized production build in the `dist` directory.
 
 This will start the server, and it should be accessible at `http://localhost:4000`.
 
-## Docker 
+## Docker
 
 The application can also be run using docker. A nginx container splits traffic between the Front end and Graphql API requests
-To build and access the application , run the following commands 
+To build and access the application , run the following commands
 
 ```
 docker-compose build
@@ -60,13 +60,12 @@ docker-compose up
 
 Website is available at localhost
 
-
 ## Running Tests
 
 To run tests for the Front end client application, from the root directory you can use the following command:
 
 ```
-cd client 
+cd client
 npm run test
 ```
 
@@ -79,29 +78,27 @@ npm run test
 
 This command will execute the tests for the server and provide feedback on the test results.
 
-## Husky pre-commit hook 
+## Husky pre-commit hook
 
-The husky pre commit hook is also configured which checks the linting and runs the unit test before commiting the code. 
+The husky pre commit hook is also configured which checks the linting and runs the unit test before commiting the code.
 
-## Output 
+## Output
 
-Desktop - All books 
+Desktop - All books
 
 ![All Desktop books](images/all_desktop.png)
 
-Desktop - Hardcover only books 
+Desktop - Hardcover only books
 
 ![Hardcover Desktop books](images/hardcover_desktop.png)
 
-
-Mobile - All books 
+Mobile - All books
 
 ![All Mobile books ](images/all_mobile.png)
 
-Desktop - Hardcover only books 
+Mobile - Hardcover only books
 
 ![Hardcover Mobile books](images/hardcover_mobile.png)
-
 
 ## License
 
